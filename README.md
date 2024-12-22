@@ -10,8 +10,6 @@ Esse é um projeto para demonstrar o uso do pix do mercado pago com o Nextjs.
 - Next Auth
 - React Icons
 ## .env
-NEXTAUTH_SECRET=
-NEXTAUTH_URL="http://localhost:3000/"
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 DATABASE_URL=
