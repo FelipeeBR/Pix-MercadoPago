@@ -10,7 +10,7 @@ import { useSession } from "next-auth/react";
 const Navbar = () => {
     const {data:session} = useSession();
     return (
-        <div>
+        <>
             {session ? (
                 <div className="flex justify-between items-center w-9/12 h-20 px-4 text-black bg-grey-700 rounded nav border border-slate-200 shadow-md">
                     <div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <h1 className="text-3xl font-bold">Entrar</h1>
                 </div>
             )}
-        </div>
+        </>
     )
 }
 
