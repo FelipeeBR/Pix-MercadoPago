@@ -3,3 +3,18 @@
 
 # Pix Mercado Pago - Qrcode - Nextjs 15
 Esse é um projeto para demonstrar o uso do pix do mercado pago com o Nextjs.
+
+## Tecnologias Utilizadas
+- Prisma ORM
+- Shadcn UI
+- Next Auth
+- React Icons
+## .env
+NEXTAUTH_SECRET=
+NEXTAUTH_URL="http://localhost:3000/"
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+DATABASE_URL=
+SITE="http://localhost:3000/"
+ACCESS_TOKEN=
+
