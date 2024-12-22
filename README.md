@@ -21,3 +21,31 @@ ACCESS_TOKEN= Aqui token do mercado pago
 ## Demo
 
 ![screen-capture](https://github.com/user-attachments/assets/e2463f96-93f7-442f-9bde-24609a013699)
+
+## Configuração WebHook
+
+Para testar o Webhook utilize o <a href="https://tunnelmole.com/">Tunnelmole</a>
+
+a rota do Webhook é ```/api/webhook```
+
+Quando o pagamento é aprovado, a compra é alterada para ```approved``` no banco de dados
+
+```
+if(paymentStatus === "approved") {
+    console.log("Pagamento aprovado:", response.data);
+    await prisma.vendas.update({
+        where: { idVenda: String(paymentId) },
+        data: {
+            statusCompra: "approved",
+            dataAprovacao: new Date(),
+        },
+    });
+} else {
+    console.log("Pagamento não aprovado:", response.data);
+}
+```
+
+
+![Captura de tela 2024-12-22 192741](https://github.com/user-attachments/assets/7af93335-da8c-4758-9180-ab5add904af7)
+
+
