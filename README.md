@@ -5,10 +5,11 @@
 Esse é um projeto para demonstrar o uso do pix do mercado pago com o Nextjs.
 
 ## Tecnologias Utilizadas
-- Prisma ORM
-- Shadcn UI
-- Next Auth
-- React Icons
+- <a href="https://www.prisma.io/">Prisma ORM</a>
+- <a href="https://ui.shadcn.com/">Shadcn UI</a>
+- <a href="https://next-auth.js.org/">Next Auth</a>
+- <a href="https://react-icons.github.io/react-icons/">React Icons</a>
+- Sqlite
 ## .env
 ```
 GOOGLE_CLIENT_ID=
