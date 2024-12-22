@@ -25,6 +25,7 @@ ACCESS_TOKEN= Aqui token do mercado pago
 ## Configuração WebHook
 
 Para testar o Webhook utilize o <a href="https://tunnelmole.com/">Tunnelmole</a>
+```npm install -g tunnelmole```
 
 a rota do Webhook é ```/api/webhook```
 
